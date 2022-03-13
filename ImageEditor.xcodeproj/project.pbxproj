@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C3D094127D7ED49005478F3 /* CollageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3D094027D7ED49005478F3 /* CollageView.swift */; };
+		5C52919727CB5254009076CB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C52919627CB5254009076CB /* ImagePicker.swift */; };
+		5C5291D527CC9240009076CB /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5291D427CC9240009076CB /* FilterView.swift */; };
+		5C9ACF9527DAA929004C04DD /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACF9427DAA929004C04DD /* ImageSaver.swift */; };
 		5CF322A127CA14B60068DE85 /* ImageEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF322A027CA14B60068DE85 /* ImageEditorApp.swift */; };
 		5CF322A327CA14B60068DE85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF322A227CA14B60068DE85 /* ContentView.swift */; };
 		5CF322A527CA14BB0068DE85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CF322A427CA14BB0068DE85 /* Assets.xcassets */; };
@@ -34,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C3D094027D7ED49005478F3 /* CollageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageView.swift; sourceTree = "<group>"; };
+		5C52919627CB5254009076CB /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		5C5291D427CC9240009076CB /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		5C9ACF9427DAA929004C04DD /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		5C9ACF9627DAAB7E004C04DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5CF3229D27CA14B60068DE85 /* ImageEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CF322A027CA14B60068DE85 /* ImageEditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditorApp.swift; sourceTree = "<group>"; };
 		5CF322A227CA14B60068DE85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,8 +103,13 @@
 		5CF3229F27CA14B60068DE85 /* ImageEditor */ = {
 			isa = PBXGroup;
 			children = (
+				5C9ACF9627DAAB7E004C04DD /* Info.plist */,
 				5CF322A027CA14B60068DE85 /* ImageEditorApp.swift */,
 				5CF322A227CA14B60068DE85 /* ContentView.swift */,
+				5C3D094027D7ED49005478F3 /* CollageView.swift */,
+				5C9ACF9427DAA929004C04DD /* ImageSaver.swift */,
+				5C5291D427CC9240009076CB /* FilterView.swift */,
+				5C52919627CB5254009076CB /* ImagePicker.swift */,
 				5CF322A427CA14BB0068DE85 /* Assets.xcassets */,
 				5CF322A627CA14BB0068DE85 /* Preview Content */,
 			);
@@ -257,7 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C5291D527CC9240009076CB /* FilterView.swift in Sources */,
+				5C9ACF9527DAA929004C04DD /* ImageSaver.swift in Sources */,
+				5C52919727CB5254009076CB /* ImagePicker.swift in Sources */,
 				5CF322A327CA14B60068DE85 /* ContentView.swift in Sources */,
+				5C3D094127D7ED49005478F3 /* CollageView.swift in Sources */,
 				5CF322A127CA14B60068DE85 /* ImageEditorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +440,8 @@
 				DEVELOPMENT_TEAM = HMB4AK49F8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImageEditor/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your collaged Photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,6 +471,8 @@
 				DEVELOPMENT_TEAM = HMB4AK49F8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImageEditor/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your collaged Photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
